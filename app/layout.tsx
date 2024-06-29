@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { twMerge } from "tailwind-merge";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PATTERNSHOP : Print design software, artworks design, for textile fabrics",
-  description: "Patternshop is a powerful tool enabling the repetition of images in organisation of networks, creation of textures and realistic mapping.",
+  title:
+    "PATTERNSHOP : Print design software, artworks design, for textile fabrics",
+  description:
+    "Patternshop is a powerful tool enabling the repetition of images in organisation of networks, creation of textures and realistic mapping.",
 };
 
 export default function RootLayout({
@@ -16,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={twMerge("bg-gray-50 dark:bg-gray-900", inter.className)}>
+        {children}
+      </body>
     </html>
   );
 }
