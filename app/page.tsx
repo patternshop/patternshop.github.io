@@ -1,12 +1,13 @@
 import Image from "next/image";
-import tissushor2 from "@/public/tissushor2.jpg";
 import MyTitle from "@/components/my-title";
+import MySubTitle from "@/components/my-subtitle";
+import tissushor2 from "@/public/tissushor2.jpg";
 import imgMono from "@/public/fonc_mono.jpg";
 import imgAleatoire from "@/public/fonc_aleatoire.jpg";
 import imgPat from "@/public/fonc_pat.jpg";
 import imgRep from "@/public/fonc_rep.jpg";
 import imgMat from "@/public/fonc_mat.jpg";
-import Link from "next/link";
+import tis_all from "@/public/tis_all.jpg";
 
 function Paragraph({
   children,
@@ -20,11 +21,7 @@ function Paragraph({
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:shrink-0">
-            <Image
-              src={img}
-              className="h-full w-auto object-cover"
-              alt=""
-            />
+            <Image src={img} className="h-full w-auto object-cover" alt="" />
           </div>
           <div className="p-4 my-auto">
             <p className="text-slate-500">{children}</p>
@@ -35,9 +32,75 @@ function Paragraph({
   );
 }
 
-export default function Home() {
+function Applications() {
   return (
-    <div className="space-y-5 p-5">
+    <div className="space-y-5">
+      <MyTitle>Applications</MyTitle>
+      <div>
+        Because technology shouldn&apos;t hold creativity back, we have created
+        an intuitive program, easy to access and which immediately meets the
+        needs of its users.
+      </div>
+      <div>
+        Patternshop is a program thought up and designed by designers, taking
+        their needs into account.
+      </div>
+
+      <div>
+        <div className="p-2 max-w-md mx-auto bg-slate-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div className="md:flex">
+            <div className="md:shrink-0">
+              <Image src={tis_all} className="" alt="" />
+            </div>
+            <div className="p-4 my-auto">
+              <div className="text-slate-500">
+                <div>
+                  It is aimed at designers in the infographic, textile design,
+                  multimedia and interior design sectors:
+                  <div className="ml-8">
+                    <ul className="list-disc">
+                      <li>stylists,</li>
+                      <li>graphic designers,</li>
+                      <li>style consultants,</li>
+                      <li>design agencies,</li>
+                      <li>design and fabric studios,tissus</li>
+                      <li>fabric publishers,</li>
+                      <li>brands,</li>
+                      <li>3D infographic designers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <MySubTitle>Examples of applications:</MySubTitle>
+      <div>
+        Patternshop can be used in both the textile and multimedia graphic
+        design fields.
+      </div>
+      <div>
+        Use Patternshop to create printouts for fashion, interior design and
+        also monograms and complex graphic compositions.
+      </div>
+      <div>
+        Adjust the proportions of motifs on a tie, or flowers on a bathing suit,
+        design a monogram for your brand, create sophisticated repetitions.
+      </div>
+      <div>
+        In the infographics sector, you can create textures for three
+        dimensional models intended for animated films, video games and any
+        other multimedia product.
+      </div>
+    </div>
+  );
+}
+
+function Description() {
+  return (
+    <div className="space-y-5">
       <MyTitle>What is Patternshop?</MyTitle>
 
       <div>
@@ -80,8 +143,15 @@ export default function Home() {
         your choice, and thus view the final result. Export and print in high
         resolution.
       </Paragraph>
+    </div>
+  );
+}
 
-      <div>Find out who Patternshop is aimed at, and its <Link href="/applications">applications</Link>.</div>
+export default function Home() {
+  return (
+    <div className="space-y-5 p-5">
+      <Description />
+      <Applications />
     </div>
   );
 }

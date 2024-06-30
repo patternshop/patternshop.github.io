@@ -15,8 +15,7 @@ import bandeau from "../public/bandeau.jpg";
 export default function MyNavbar() {
   const currentPath = usePathname();
   var itemArray = [
-    ["Home", "/"],
-    ["Applications", "/applications"],
+    ["Presentation", "/"],
     ["Ressources", "/ressources"],
     /*
     ["Support", "/navbars"],

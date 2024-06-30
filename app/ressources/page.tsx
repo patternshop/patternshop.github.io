@@ -10,36 +10,6 @@ import fonc_pat from "@/public/patrons/fonc_pat.jpg";
 
 import Link from "next/link";
 
-function ImageBlock({
-  img,
-  title,
-}: Readonly<{
-  img: any;
-  title: string;
-}>) {
-  return (
-    <div className="">
-      <Image src={img} className="" alt="" />
-      <h3 className=" font-bold text-nice-blue">{title}</h3>
-      <div className="text-sm">From: Patternshop</div>
-    </div>
-  );
-}
-
-function Designs() {
-  return (
-    <div className="space-y-5">
-      <MyTitle>Design gallery</MyTitle>
-      <MySubTitle>A selection of designs</MySubTitle>
-      <div className="grid grid-cols-3 gap-5">
-        <ImageBlock img={monopatternshop_zm} title="Woven" />
-        <ImageBlock img={coquelicots_zm} title="Poppies" />
-        <ImageBlock img={japonais_zm} title="Japanese" />
-        <ImageBlock img={ecossais_zm} title="Tartan" />
-      </div>
-    </div>
-  );
-}
 
 function ImagePacks() {
   return (
@@ -97,12 +67,59 @@ function TemplatePacks() {
   );
 }
 
+function ImageBlock({
+  img,
+  title,
+}: Readonly<{
+  img: any;
+  title: string;
+}>) {
+  return (
+    <div className="">
+      <Image src={img} className="" alt="" />
+      <h3 className=" font-bold text-nice-blue">{title}</h3>
+      <div className="text-sm">From: Patternshop</div>
+    </div>
+  );
+}
+
+function Designs() {
+  return (
+    <div className="space-y-5">
+      <MyTitle>Design gallery</MyTitle>
+      <MySubTitle>A selection of designs</MySubTitle>
+      <div className="grid grid-cols-3 gap-5">
+        <ImageBlock img={monopatternshop_zm} title="Woven" />
+        <ImageBlock img={coquelicots_zm} title="Poppies" />
+        <ImageBlock img={japonais_zm} title="Japanese" />
+        <ImageBlock img={ecossais_zm} title="Tartan" />
+      </div>
+    </div>
+  );
+}
+
+function Videos() {
+  return (
+    <div className="space-y-5">
+      <MyTitle>Video tutorial</MyTitle>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fGaLheahpJA?si=18y6rsZ3jNO6FuD3" frameBorder="0" allowFullScreen></iframe>
+      </div>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O7FCujmKwX0?si=XznK4NbQgw0a-qEx" frameBorder="0" allowFullScreen></iframe>
+      </div>
+      <div className="text-sm">We gratefully thank BoundingSquirres for the video.</div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="space-y-5 p-5">
       <ImagePacks />
       <TemplatePacks />
       <Designs />
+      <Videos />
     </div>
   );
 }
