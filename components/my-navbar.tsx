@@ -17,8 +17,8 @@ export default function MyNavbar() {
   var itemArray = [
     ["Home", "/"],
     ["Applications", "/applications"],
+    ["Ressources", "/ressources"],
     /*
-    ["Community", "/applications"],
     ["Support", "/navbars"],
     ["Download", "/navbars"],
     ["Contact us", "/navbars"],
