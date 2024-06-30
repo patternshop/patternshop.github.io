@@ -11,7 +11,7 @@ export default function Home() {
         Patternshop, software created by designers for designers.
       </MySubTitle>
       <div>
-        Because technology shouldn't hold creativity back, we have created an
+        Because technology shouldn&apos;t hold creativity back, we have created an
         intuitive program, easy to access and which immediately meets the needs
         of its users.
       </div>

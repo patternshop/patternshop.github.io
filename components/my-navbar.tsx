@@ -28,7 +28,7 @@ export default function MyNavbar() {
     <div>
       <Navbar fluid={true} rounded={true}>
         <NavbarBrand href="/">
-          <Image src={logo} className="mr-3 h-16 w-auto" alt=" Pattersnhop" />
+          <Image src={logo} className="mr-3 h-16 w-auto" alt="Pattersnhop" />
         </NavbarBrand>
         <NavbarToggle />
         <NavbarCollapse>
