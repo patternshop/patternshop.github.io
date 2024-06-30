@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={twMerge("bg-gray-50 dark:bg-gray-900", inter.className)}>
-        <main className="container max-w-3xl mx-auto rounded-md border-solid border-2 border-gray-200 m-5 p-5 bg-white">
+        <main className="container max-w-3xl mx-auto rounded-xl border-solid border-2 border-gray-200 m-5 p-5 bg-white">
           <MyNavbar />
           {children}
         </main>
