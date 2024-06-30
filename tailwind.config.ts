@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         'nice-red': '#CC0000',
+        'nice-blue': '#478ABC'
       },
     },
   },

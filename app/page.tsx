@@ -1,18 +1,19 @@
 import Image from "next/image";
-import tissushor2 from "../public/tissushor2.jpg";
+import tissushor2 from "@/public/tissushor2.jpg";
 import MyTitle from "@/components/my-title";
-import imgMono from "../public/fonc_mono.jpg";
-import imgAleatoire from "../public/fonc_aleatoire.jpg";
-import imgPat from "../public/fonc_pat.jpg";
-import imgRep from "../public/fonc_rep.jpg";
-import imgMat from "../public/fonc_mat.jpg";
+import imgMono from "@/public/fonc_mono.jpg";
+import imgAleatoire from "@/public/fonc_aleatoire.jpg";
+import imgPat from "@/public/fonc_pat.jpg";
+import imgRep from "@/public/fonc_rep.jpg";
+import imgMat from "@/public/fonc_mat.jpg";
+import Link from "next/link";
 
 function Paragraph({
   children,
   img,
 }: Readonly<{
   children: React.ReactNode;
-  img: Image;
+  img: any;
 }>) {
   return (
     <div>
@@ -80,7 +81,7 @@ export default function Home() {
         resolution.
       </Paragraph>
 
-      <div>Find out who Patternshop is aimed at, and its applications.</div>
+      <div>Find out who Patternshop is aimed at, and its <Link href="/applications">applications</Link>.</div>
     </div>
   );
 }
