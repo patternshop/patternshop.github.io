@@ -16,8 +16,20 @@ function Paragraph({
 }>) {
   return (
     <div>
-      <div>{children}</div>
-      <Image src={img} className="" alt="" />
+      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div className="md:flex">
+          <div className="md:shrink-0">
+            <Image
+              src={img}
+              className="h-full w-auto object-cover"
+              alt=""
+            />
+          </div>
+          <div className="p-4 my-auto">
+            <p className="text-slate-500">{children}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -69,7 +81,6 @@ export default function Home() {
       </Paragraph>
 
       <div>Find out who Patternshop is aimed at, and its applications.</div>
-
     </div>
   );
 }
