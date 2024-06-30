@@ -27,7 +27,7 @@ export default function Home() {
               <Image src={tis_all} className="" alt="" />
             </div>
             <div className="p-4 my-auto">
-              <p className="text-slate-500">
+              <div className="text-slate-500">
                 <div>
                   It is aimed at designers in the infographic, textile design,
                   multimedia and interior design sectors:
@@ -44,7 +44,7 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>

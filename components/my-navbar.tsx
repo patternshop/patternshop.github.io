@@ -1,6 +1,11 @@
-'use client';
+"use client";
 
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarToggle,
+} from "flowbite-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -12,21 +17,18 @@ export default function MyNavbar() {
   var itemArray = [
     ["Home", "/"],
     ["Applications", "/applications"],
+    /*
     ["Community", "/applications"],
     ["Support", "/navbars"],
     ["Download", "/navbars"],
     ["Contact us", "/navbars"],
+    */
   ];
-  /*
-  array.map(val => ({
-    key1: val.key1,
-    key2: val.key2
-  }));*/
   return (
     <div>
       <Navbar fluid={true} rounded={true}>
-        <NavbarBrand href="#">
-          <Image src={logo} className="mr-3 h-32 sm:h-9 w-auto" alt=" Logo" />
+        <NavbarBrand href="/">
+          <Image src={logo} className="mr-3 h-16 w-auto" alt=" Pattersnhop" />
         </NavbarBrand>
         <NavbarToggle />
         <NavbarCollapse>
