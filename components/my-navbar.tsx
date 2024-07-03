@@ -18,6 +18,7 @@ export default function MyNavbar() {
     ["Presentation", "/"],
     ["Ressources", "/ressources"],
     ["Tutorials", "/tutorials"],
+    ["Download", "/download"],
     /*
     ["Support", "/navbars"],
     ["Download", "/navbars"],
