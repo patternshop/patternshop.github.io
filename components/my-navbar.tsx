@@ -1,16 +1,17 @@
 "use client";
 
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
   NavbarToggle,
 } from "flowbite-react";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
 
-import logo from "../public/logo.gif";
-import bandeau from "../public/bandeau.jpg";
+import logo from "@/public/images/logo.gif";
+import bandeau from "@/public/images/bandeau.jpg";
 
 export default function MyNavbar() {
   const currentPath = usePathname();
@@ -18,12 +19,7 @@ export default function MyNavbar() {
     ["Presentation", "/"],
     ["Ressources", "/ressources"],
     ["Tutorials", "/tutorials"],
-    ["Download", "/download"],
-    /*
-    ["Support", "/navbars"],
-    ["Download", "/navbars"],
-    ["Contact us", "/navbars"],
-    */
+    ["Download", "/download"]
   ];
   return (
     <div>

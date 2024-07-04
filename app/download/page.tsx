@@ -4,8 +4,8 @@ import Link from "next/link";
 import MyTitle from "@/components/my-title";
 import MySubTitle from "@/components/my-subtitle";
 
-import config_win from "@/public/config_win.jpg";
-import download_bt from "@/public/download_bt.gif";
+import config_win from "@/public/images/config_win.jpg";
+import download_bt from "@/public/images/download_bt.gif";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <MySubTitle>Setup for Windows</MySubTitle>
       <div>Version 1.0 hosted at Sourceforge (Release date: 2012-12-16)</div>
       <div>
-        <Link href="http://sourceforge.net/projects/patternshop/files/Windows/Patternshop_en_FULL.msi/download">
+        <Link href="/releases/20121216/Patternshop_en_FULL.msi">
           <div className="flex flex-row gap-1">
             <Image src={config_win} className="h-auto w-auto" alt="Windows" />
             <Image src={download_bt} className="h-auto w-auto" alt="Download" />

@@ -4,12 +4,12 @@ import Link from "next/link";
 import MyTitle from "@/components/my-title";
 import MySubTitle from "@/components/my-subtitle";
 
-import monopatternshop_zm from "@/public/monopatternshop_zm.jpg";
-import japonais_zm from "@/public/japonais_zm.jpg";
-import ecossais_zm from "@/public/ecossais_zm.jpg";
-import coquelicots_zm from "@/public/coquelicots_zm.jpg";
-import packbasezoom from "@/public/motifs/packbasezoom.jpg";
-import fonc_pat from "@/public/patrons/fonc_pat.jpg";
+import monopatternshop_zm from "@/public/images/monopatternshop_zm.jpg";
+import japonais_zm from "@/public/images/japonais_zm.jpg";
+import ecossais_zm from "@/public/images/ecossais_zm.jpg";
+import coquelicots_zm from "@/public/images/coquelicots_zm.jpg";
+import packbasezoom from "@/public/images/motifs/packbasezoom.jpg";
+import fonc_pat from "@/public/images/patrons/fonc_pat.jpg";
 
 function ImagePacks() {
   return (

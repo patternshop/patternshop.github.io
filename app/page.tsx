@@ -1,13 +1,15 @@
 import Image from "next/image";
+
 import MyTitle from "@/components/my-title";
 import MySubTitle from "@/components/my-subtitle";
-import tissushor2 from "@/public/tissushor2.jpg";
-import imgMono from "@/public/fonc_mono.jpg";
-import imgAleatoire from "@/public/fonc_aleatoire.jpg";
-import imgPat from "@/public/fonc_pat.jpg";
-import imgRep from "@/public/fonc_rep.jpg";
-import imgMat from "@/public/fonc_mat.jpg";
-import tis_all from "@/public/tis_all.jpg";
+
+import tissushor2 from "@/public/images/tissushor2.jpg";
+import imgMono from "@/public/images/fonc_mono.jpg";
+import imgAleatoire from "@/public/images/fonc_aleatoire.jpg";
+import imgPat from "@/public/images/fonc_pat.jpg";
+import imgRep from "@/public/images/fonc_rep.jpg";
+import imgMat from "@/public/images/fonc_mat.jpg";
+import tis_all from "@/public/images/tis_all.jpg";
 
 function Paragraph({
   children,

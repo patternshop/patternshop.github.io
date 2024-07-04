@@ -4,9 +4,11 @@ import Link from "next/link";
 
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
-import MyNavbar from "../components/my-navbar";
-import "./globals.css";
-import github from "@/public/github.png";
+import MyNavbar from "@/components/my-navbar";
+
+import "@/app/globals.css";
+
+import github from "@/public/images/github.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
