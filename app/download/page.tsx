@@ -12,7 +12,7 @@ export default function Home() {
     <div className="space-y-5 p-5">
       <MyTitle>Download</MyTitle>
       <MySubTitle>Setup for Windows</MySubTitle>
-      <div>Version 1.0 hosted at Sourceforge (Release date: 2012-12-16)</div>
+      <div>Version 1.0 (Release date: 2012-12-16)</div>
       <div>
         <Link href="/releases/20121216/Patternshop_en_FULL.msi">
           <div className="flex flex-row gap-1">
