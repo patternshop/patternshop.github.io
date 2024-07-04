@@ -17,7 +17,8 @@ const config: Config = {
     },
   },
   plugins: [
-    flowbite.plugin()
+    flowbite.plugin(),
+    require('@tailwindcss/aspect-ratio')
   ],
 };
 export default config;
